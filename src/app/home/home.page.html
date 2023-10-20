@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+    <ion-button (click)="logout()">
+      <ion-icon name="arrow-back-outline"></ion-icon>    </ion-button>
+  </ion-buttons>
+    <ion-title>Bienvenido {{usuario}}</ion-title>
+   
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <!-- <div class="ion-padding"> 
+    <ion-button (click)="activar()">
+      {{Activar}}
+    </ion-button>
+  </div> -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Usuario: {{usuario}}</ion-card-title>
+      <ion-card-subtitle>Tipo de usuario: {{datos['tipo']}}</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-icon name="cash-outline"></ion-icon>
+      Saldo: {{datos['saldo']}}$
+    </ion-card-content>
+      <ion-button expand="full"  fill="outline"  (click)="borrar()">
+        <ion-icon name="trash-outline"></ion-icon>
+      </ion-button>
+  </ion-card>
+  <ion-fab slot="fixed" horizontal="center" vertical="bottom">
+  <ion-fab-button (click)="escanear()">
+    <ion-icon name="qr-code-outline"></ion-icon>
+    </ion-fab-button>
+</ion-fab>
+</ion-content>
+
+

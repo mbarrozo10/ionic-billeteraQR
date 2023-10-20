@@ -1,0 +1,65 @@
+
+<ion-content>
+  <ion-grid>
+    <ion-card class="ion-cards">
+      <ion-row color="primary" justify-content-center>
+        <ion-col align-self-center size-md="12" size-lg="12" size-xs="12">
+          <div class="text-center d-flex align-items-center justify-content-center">
+              <img src="../../assets/logo.png" alt="" class="img-fluid custom-img-size">
+              <h3>Ingreso</h3>
+            </div>
+        </ion-col>
+          <ion-col align-self-center size-md="12" size-lg="12" size-xs="12"> 
+              <ion-input label="Correo" fill="outline" name="email" type="email" placeholder="your@email.com" [(ngModel)]="usuario" name="usuario"></ion-input>
+              <ion-input label="Contraseña" fill="outline"name="password" type="password" placeholder="Password" [(ngModel)]="pass" name="pass"></ion-input>
+          </ion-col>
+        <ion-col class="botones" align-self-center size-md="12" size-lg="12" size-xs="12"> 
+          <ion-button  fill="outline" type="submit" (click)="login()" expand="">Ingresar</ion-button>
+          <ion-button fill="outline" type="submit" (click)="salir()" expand="">Salir</ion-button>     
+          <ion-button fill="outline" type="submit" id="open-custom-dialog" expand="">Usuarios</ion-button>            
+        </ion-col>
+      </ion-row>
+
+      <ion-modal id="example-modal" #modal trigger="open-custom-dialog">
+        <ng-template>
+          <div class="wrapper">
+            <h1>Usuarios</h1>
+    
+            <ion-list lines="none">
+              <ion-item button="true" detail="false" (click)="Autocompletar('admin@admin.com','111111'); modal.dismiss()" >
+                <ion-icon name="person-circle"></ion-icon>
+                <ion-label>Admin</ion-label>
+              </ion-item>
+              <ion-item button="true" detail="false" (click)="Autocompletar('usuario@usuario.com','333333'); modal.dismiss()" >
+                <ion-icon name="person-circle"></ion-icon>
+                <ion-label>Usuario</ion-label>
+              </ion-item>
+              <ion-item button="true" detail="false" (click)="Autocompletar('invitado@invitado.com','222222'); modal.dismiss()">
+                <ion-icon name="person-circle"></ion-icon>
+                <ion-label>Invitado</ion-label>
+              </ion-item>
+              <ion-item button="true" detail="false" (click)="Autocompletar('tester@tester.com','555555'); modal.dismiss()">
+                <ion-icon name="person-circle"></ion-icon>
+                <ion-label>Tester</ion-label>
+              </ion-item>
+              <ion-item button="true" detail="false" (click)="Autocompletar('anonimo@anonimo.com','444444'); modal.dismiss()">
+                <ion-icon name="person-circle"></ion-icon>
+                <ion-label>Anonimo</ion-label>
+              </ion-item>
+            </ion-list>
+          </div>
+        </ng-template>
+      </ion-modal>
+      <!-- <div class="radio">
+      <ion-radio-group value="">
+        <ion-radio value="grapes"color="tertiary" >admin</ion-radio><br />
+        <ion-radio value="strawberries" color="tertiary">usuario</ion-radio><br />
+        <ion-radio value="pineapple"color="tertiary" >invitado</ion-radio><br />
+        <ion-radio value="cherries"color="tertiary" (click)="">tester</ion-radio><br />
+        <ion-radio value="anonimo"color="tertiary" (click)="">anonimo</ion-radio>
+      </ion-radio-group>
+    </div> -->
+      </ion-card>
+  </ion-grid>
+</ion-content>
+

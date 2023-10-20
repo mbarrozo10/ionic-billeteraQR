@@ -1,0 +1,99 @@
+
+ion-title, h3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    // margin-bottom: -50px;
+    font-family: Montserrat;
+    font-size: 40px;
+}
+// img{
+//     width: 400px;
+//     height: 250px;
+//     margin-bottom: -100px;
+// }
+.custom-img-size {
+    width: 350px; /* Cambia el tamaño de acuerdo a tus necesidades */
+    height: 350px; /* Mantén la relación de aspecto original */
+    padding-left: 50px;
+    margin-bottom: -150px;
+  }
+
+ion-button, ion-toolbar{
+    --background: #7f7bba;
+    font-family: Montserrat;
+    color: black;
+    --border-color: #5271ff;
+    font-size: 20px;
+
+}
+
+ion-grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.ion-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 600px;
+    border-radius: 60px;
+    --background: #7f7bba;
+}
+
+
+ion-input{
+    margin-top: 20px;
+    color: black;
+    font-family: Montserrat;
+    font-size: 20px;
+
+}
+.radio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Montserrat;
+    color: black;
+}
+
+.botones{
+    // --background: #7c78b8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+ion-modal#example-modal {
+    --width: fit-content;
+    --min-width: 250px;
+    --height: fit-content;
+    --border-radius: 6px;
+    --box-shadow: 0 28px 48px rgba(0, 0, 0, 0.4);
+  }
+  
+  ion-modal#example-modal h1 {
+    margin: 20px 20px 10px 20px;
+  }
+  
+  ion-modal#example-modal ion-icon {
+    margin-right: 6px;
+  
+    width: 48px;
+    height: 48px;
+  
+    padding: 4px 0;
+  
+    color: #aaaaaa;
+  }
+  
+  ion-modal#example-modal .wrapper {
+    margin-bottom: 10px;
+  }

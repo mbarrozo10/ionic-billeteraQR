@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">"Banco"</string>
+    <string name="title_activity_main">"Banco"</string>
+    <string name="package_name">"Banco".ionic.starter</string>
+    <string name="custom_url_scheme">"Banco".ionic.starter</string>
+</resources>
